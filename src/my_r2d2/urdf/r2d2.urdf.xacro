@@ -254,10 +254,12 @@
     <xacro:default_inertial mass="1"/>
   </link>
 
+
+
 <joint name="lense_box" type="fixed">
     <parent link="box"/>
     <child link="lense"/>    
-    <origin xyz="0 0 0"/>
+    <origin xyz="0 0 0" rpy="0 0 0" />
   </joint>
 
 <link name="base_footprint">
@@ -268,6 +270,17 @@
     <parent link="base_footprint"/>
     <child link="base_link"/>    
     <origin xyz="0 0 0.48"/>
+  </joint>
+
+
+<link name="eye"> 
+<origin xyz="0 0 0" rpy="0 0 0" />   
+  </link>
+
+<joint name="eye_lense" type="fixed">
+    <parent link="lense"/>
+    <child link="eye"/>    
+    <origin xyz="0 0 0" rpy="0 ${pi/2} ${pi/2}"/>
   </joint>
 
 
