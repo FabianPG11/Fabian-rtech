@@ -1,0 +1,3 @@
+<launch>
+<node name="rviz" pkg="rviz" type="rviz" args="-d $(find range_visualizer)/config/ultrasonic_arduino.rviz"/>
+</launch>

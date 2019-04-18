@@ -69,10 +69,10 @@ find_package(catkin REQUIRED COMPONENTS
 # )
 
 ## Generate added messages and services with any dependencies listed here
-# generate_messages(
-#   DEPENDENCIES
-#   sensor_msgs#   std_msgs
-# )
+generate_messages(
+   DEPENDENCIES
+   sensor_msgs#   std_msgs
+ )
 
 
 ################################################
@@ -203,3 +203,8 @@ include_directories(
 add_executable(sensor_ultrasonic src/sensor_ultrasonic.cpp)
 target_link_libraries(sensor_ultrasonic ${catkin_LIBRARIES})
 add_dependencies(sensor_ultrasonic range_visualizer_generate_messages_cpp)
+
+add_executable(arduino src/arduino.cpp)
+target_link_libraries(arduino ${catkin_LIBRARIES})
+add_dependencies(arduino range_visualizer_generate_messages_cpp)
+

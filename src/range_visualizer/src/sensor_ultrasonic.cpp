@@ -5,6 +5,9 @@
 // %Tag(MSG_HEADER)%
 #include "sensor_msgs/Range.h"
 
+
+
+
 int main(int argc, char **argv)
 {
   
@@ -44,7 +47,6 @@ int main(int argc, char **argv)
 
   ros::Rate loop_rate(10);
   sensor_msgs::Range msg;
-
 
   msg.min_range = 0.02;
   msg.max_range = 4;
