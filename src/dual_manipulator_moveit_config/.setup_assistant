@@ -1,11 +1,11 @@
 moveit_setup_assistant_config:
   URDF:
-    package: motoman_sia5d_support
-    relative_path: urdf/sia5d.xacro
+    package: dual_manipulator
+    relative_path: urdf/two_sia5d_ur5.xacro
     xacro_args: "--inorder "
   SRDF:
     relative_path: config/motoman_sia5d.srdf
   CONFIG:
     author_name: Fabian Parra
     author_email: parbian_11@hotmail.com
-    generated_timestamp: 1556801585
+    generated_timestamp: 1558008987

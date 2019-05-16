@@ -150,7 +150,7 @@ int main(int argc, char** argv)
   // and report success on execution of a trajectory.
 
   /* Uncomment below line when working with a real robot */
-  /* move_group.move(); */
+   move_group.move(); 
 
   // Planning to a joint-space goal
   // ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -276,6 +276,8 @@ int main(int argc, char** argv)
   const double eef_step = 0.01;
   double fraction = move_group.computeCartesianPath(waypoints, eef_step, jump_threshold, trajectory);
   ROS_INFO_NAMED("tutorial", "Visualizing plan 4 (Cartesian path) (%.2f%% acheived)", fraction * 100.0);
+
+
 
   // Visualize the plan in RViz
   visual_tools.deleteAllMarkers();
