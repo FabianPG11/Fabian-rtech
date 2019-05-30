@@ -21,3 +21,6 @@
 [submodule "src/universal_robot"]
 	path = src/universal_robot
 	url = https://github.com/ros-industrial/universal_robot
+[submodule "turtlebot3"]
+	path = turtlebot3
+	url = https://github.com/ROBOTIS-GIT/turtlebot3.git

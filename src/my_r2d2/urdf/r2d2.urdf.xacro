@@ -256,9 +256,10 @@
 
 
 
-<joint name="lense_box" type="fixed">
+<joint name="lense_box" type="prismatic">
     <parent link="box"/>
     <child link="lense"/>    
+    <limit effort="1000.0" lower="0.38" upper="0" velocity="0.5"/>
     <origin xyz="0 0 0" rpy="0 0 0" />
   </joint>
 

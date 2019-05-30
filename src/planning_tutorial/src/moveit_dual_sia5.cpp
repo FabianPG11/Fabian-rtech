@@ -83,7 +83,7 @@ target_pose2.position.y -= 0.2;
 move_group2.setPoseTarget(target_pose2);
 move_group2.move();
 
-geometry_msgs::Pose target_pose_dual = move_group3.getCurrentPose().pose;
+//geometry_msgs::Pose target_pose_dual = move_group3.getCurrentPose().pose;
 
 
 
