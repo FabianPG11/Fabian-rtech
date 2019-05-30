@@ -1,0 +1,5 @@
+<launch>
+<remap from="cmd_vel" to="/cmd_vel"/>
+<node name="move_server" pkg="final_exam" type="move_server"/>
+<node name="fake_r2d2_controller" pkg="r2d2_navigator" type="fake_r2d2_controller"/>
+</launch>
